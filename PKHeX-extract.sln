@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKHeX-extract", "PKHeX-extract\PKHeX-extract.csproj", "{A28967A1-F374-4C7B-BD78-ACF3B0C93234}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A28967A1-F374-4C7B-BD78-ACF3B0C93234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28967A1-F374-4C7B-BD78-ACF3B0C93234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28967A1-F374-4C7B-BD78-ACF3B0C93234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28967A1-F374-4C7B-BD78-ACF3B0C93234}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD181F58-E8D0-4953-A9E6-1D7557626668}
+	EndGlobalSection
+EndGlobal
