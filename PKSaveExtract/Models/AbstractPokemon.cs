@@ -185,7 +185,7 @@ namespace PKSaveExtract.Models
         {
             string ball = Enum.GetName(typeof(Ball), pokemon.Ball) ?? "Poke";
 
-            return FormatText(ball) + "_ball"; ;
+            return FormatText(ball) + "-ball"; ;
         }
 
 
