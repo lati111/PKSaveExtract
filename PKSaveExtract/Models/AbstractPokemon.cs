@@ -163,7 +163,7 @@ namespace PKSaveExtract.Models
 
         private string ExtractNature()
         {
-            string nature = Enum.GetName(typeof(Nature), pokemon.Ball) ?? "adamant";
+            string nature = Enum.GetName(typeof(Nature), pokemon.Nature) ?? "adamant";
 
             return FormatText(nature);
         }
