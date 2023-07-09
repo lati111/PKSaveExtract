@@ -77,6 +77,7 @@ namespace PKSaveExtract.Models
         {
             this.pokemon = pokemon;
 
+            Debug.WriteLine(pokemon.PID.ToString());
             PID = pokemon.PID;
             nickname = pokemon.Nickname;
             is_shiny = pokemon.IsShiny;

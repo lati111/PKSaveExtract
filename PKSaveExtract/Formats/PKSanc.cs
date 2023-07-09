@@ -70,6 +70,7 @@ namespace PKSaveExtract.Formats
         public string Trainer_name { get; set; }
         public string Trainer_gender { get; set; }
         public string Trainer_game { get; set; }
+        public string Version { get; set; }
 
         public PKSanc(AbstractPokemon pokemon)
         {
@@ -139,6 +140,8 @@ namespace PKSaveExtract.Formats
             Can_gigantamax = pokemon.can_gigantamiax;
             Has_n_sparkle = pokemon.has_n_sparkle;
             Dynamax_level = pokemon.dynamax_level;
+
+            Version = "v1.2";
         }
 
         private static string GetRibbonString(List<string> ribbons)
