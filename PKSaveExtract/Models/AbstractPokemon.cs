@@ -175,8 +175,8 @@ namespace PKSaveExtract.Models
             return pokemon.Gender switch
             {
                 0 => "M",
-                2 => "F",
-                1 => "-",
+                1 => "F",
+                2 => "-",
                 _ => "",
             };
         }
