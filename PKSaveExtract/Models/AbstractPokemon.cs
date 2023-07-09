@@ -1,5 +1,6 @@
 ﻿using PKHeX.Core;
 using PKSaveExtract.Enums;
+using System.Diagnostics;
 
 namespace PKSaveExtract.Models
 {
@@ -128,23 +129,21 @@ namespace PKSaveExtract.Models
             move3_pp_ups = pokemon.Move3_PPUps;
             move4_pp_ups = pokemon.Move4_PPUps;
 
-            if (pokemon.WasEgg == true)
+
+            if (pokemon.WasEgg == true && pokemon.EggMetDate != null)
             {
                 was_egg = true;
-                met_date = FormatMetDate(
-                    pokemon.Egg_Year,
-                    pokemon.Egg_Month,
-                    pokemon.Egg_Day
-                );
+                met_date = FormatMetDate((DateOnly)pokemon.EggMetDate);
             }
             else
             {
+                if (pokemon.MetDate == null)
+                {
+                    pokemon.MetDate = new DateOnly();
+                }
+
                 met_level = pokemon.Met_Level;
-                met_date = FormatMetDate(
-                    pokemon.Met_Year,
-                    pokemon.Met_Month,
-                    pokemon.Met_Day
-                );
+                met_date = FormatMetDate((DateOnly)pokemon.MetDate);
             }
 
             met_location = GetLocation(pokemon.Met_Location);
@@ -251,10 +250,11 @@ namespace PKSaveExtract.Models
             return text;
         }
 
-        protected static string FormatMetDate(int year, int month, int day)
+        protected static string FormatMetDate(DateOnly dateonly)
         {
+            var dates = dateonly.ToString().Split("/");
             string date = "{0}-{1}-{2}";
-            date = string.Format(date, year, month, day);
+            date = string.Format(date, dates[2], dates[1], dates[0]);
             return date;
         }
     }
