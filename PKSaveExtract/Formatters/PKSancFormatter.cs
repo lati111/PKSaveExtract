@@ -10,7 +10,8 @@ namespace PKSaveExtract.Formatters
         public override List<IFormat> Format(List<AbstractPokemon> pokemonCollection)
         {
             List<IFormat> OutputCollection = new();
-            pokemonCollection.ForEach(pokemon => {
+            pokemonCollection.ForEach(pokemon =>
+            {
                 OutputCollection.Add(new PKSanc(pokemon));
             });
             return OutputCollection;

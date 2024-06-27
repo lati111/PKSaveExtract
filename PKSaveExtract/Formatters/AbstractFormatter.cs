@@ -1,7 +1,5 @@
-﻿using CsvHelper;
-using PKSaveExtract.Formats;
+﻿using PKSaveExtract.Formats;
 using PKSaveExtract.Models;
-using System.Globalization;
 
 namespace PKSaveExtract.Formatters
 {

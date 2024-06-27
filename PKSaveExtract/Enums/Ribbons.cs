@@ -21,7 +21,7 @@
         public const string DoubleAbilityRibbon = "double_ability_ribbon";
         public const string GreatAbilityRibbon = "great_ability_ribbon";
         public const string MultiAbilityRibbon = "multi_ability_ribbon";
-        public const string PairAbilityRibbon = "pair_ability_ribbon"; 
+        public const string PairAbilityRibbon = "pair_ability_ribbon";
         public const string WorldAbilityRibbon = "world_ability_ribbon";
 
         //battle maison

@@ -94,12 +94,12 @@ namespace PKSaveExtract.Formats
             HP_EV = pokemon.HP_EV;
             ATK_EV = pokemon.ATK_EV;
             DEF_EV = pokemon.DEF_EV;
-            SPA_EV = pokemon. SPA_EV;   
-            SPD_EV = pokemon.SPD_EV;    
+            SPA_EV = pokemon.SPA_EV;
+            SPD_EV = pokemon.SPD_EV;
             SPE_EV = pokemon.SPE_EV;
 
-            HP_IV = pokemon.HP_IV;  
-            ATK_IV = pokemon.ATK_IV;    
+            HP_IV = pokemon.HP_IV;
+            ATK_IV = pokemon.ATK_IV;
             DEF_IV = pokemon.DEF_IV;
             SPA_IV = pokemon.SPA_IV;
             SPD_IV = pokemon.SPD_IV;
@@ -112,9 +112,9 @@ namespace PKSaveExtract.Formats
             Smart = pokemon.smart;
             Tough = pokemon.tough;
 
-            Move1 = pokemon.move1; 
-            Move2 = pokemon.move2; 
-            Move3 = pokemon.move3; 
+            Move1 = pokemon.move1;
+            Move2 = pokemon.move2;
+            Move3 = pokemon.move3;
             Move4 = pokemon.move4;
             Move1_pp_ups = pokemon.move1_pp_ups;
             Move2_pp_ups = pokemon.move2_pp_ups;
