@@ -142,7 +142,7 @@ namespace PKSaveExtract.Models
                 }
 
                 met_level = pokemon.MetLevel;
-                met_date = FormatMetDate((DateOnly)pokemon.MetDate);
+                met_date = FormatMetDate(((DateOnly?)pokemon.MetDate) ?? new DateOnly());
             }
 
             met_location = GetLocation(pokemon.MetLocation);
