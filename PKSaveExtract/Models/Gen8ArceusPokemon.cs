@@ -23,7 +23,7 @@ namespace PKSaveExtract.Models
 
             if (pkmn.IsAlpha == true)
             {
-                can_gigantamiax = true;
+                is_alpha = true;
             }
         }
 
