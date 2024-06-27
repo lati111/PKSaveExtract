@@ -27,6 +27,12 @@ namespace PKSaveExtract.Models
             }
         }
 
+        protected override string GetLocation(int locationID)
+        {
+            string location = GameInfo.GetLocationName(false, (ushort)locationID, 0, pokemon.Generation, GameVersion.PLA);
+            return FormatText(location);
+        }
+
         protected override int ExtractBeauty()
         {
             if (pkmn == null) { return 0; }

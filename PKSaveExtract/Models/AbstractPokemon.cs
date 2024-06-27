@@ -143,11 +143,11 @@ namespace PKSaveExtract.Models
                     pokemon.MetDate = new DateOnly();
                 }
 
-                met_level = pokemon.Met_Level;
+                met_level = pokemon.MetLevel;
                 met_date = FormatMetDate((DateOnly)pokemon.MetDate);
             }
 
-            met_location = GetLocation(pokemon.Met_Location);
+            met_location = GetLocation(pokemon.MetLocation);
             met_game = ExtractGame();
             trainer = new Trainer(pokemon, met_game);
 
@@ -218,9 +218,9 @@ namespace PKSaveExtract.Models
 
         abstract protected List<string> ExtractRibbons();
 
-        protected string GetLocation(int locationID)
+        protected virtual string GetLocation(int locationID)
         {
-            string location = GameInfo.GetLocationName(false, locationID, 0, pokemon.Generation, (GameVersion)pokemon.Version);
+            string location = GameInfo.GetLocationName(false, (ushort)locationID, 0, pokemon.Generation, pokemon.Version);
             return FormatText(location);
         }
 
