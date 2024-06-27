@@ -141,7 +141,7 @@ namespace PKSaveExtract.Formats
             Has_n_sparkle = pokemon.has_n_sparkle;
             Dynamax_level = pokemon.dynamax_level;
 
-            Version = "v1.2";
+            Version = "v2.0";
         }
 
         private static string GetRibbonString(List<string> ribbons)
