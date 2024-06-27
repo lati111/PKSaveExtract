@@ -14,8 +14,8 @@ namespace PKSaveExtract.Models
         {
             SID = pokemon.SID16;
             TID = pokemon.TID16;
-            name = pokemon.OT_Name;
-            gender = (pokemon.OT_Gender == 0) ? "M" : "F";
+            name = pokemon.OriginalTrainerName;
+            gender = (pokemon.OriginalTrainerGender == 0) ? "M" : "F";
             this.game = game;
         }
     }

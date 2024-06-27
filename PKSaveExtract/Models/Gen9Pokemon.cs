@@ -20,37 +20,37 @@ namespace PKSaveExtract.Models
         protected override int ExtractBeauty()
         {
             if (pkmn == null) { return 0; }
-            return pkmn.CNT_Beauty;
+            return pkmn.ContestBeauty;
         }
 
         protected override int ExtractCool()
         {
             if (pkmn == null) { return 0; }
-            return pkmn.CNT_Cool;
+            return pkmn.ContestCool;
         }
 
         protected override int ExtractCute()
         {
             if (pkmn == null) { return 0; }
-            return pkmn.CNT_Cute;
+            return pkmn.ContestCute;
         }
 
         protected override int ExtractSheen()
         {
             if (pkmn == null) { return 0; }
-            return pkmn.CNT_Sheen;
+            return pkmn.ContestSheen;
         }
 
         protected override int ExtractSmart()
         {
             if (pkmn == null) { return 0; }
-            return pkmn.CNT_Smart;
+            return pkmn.ContestSmart;
         }
 
         protected override int ExtractTough()
         {
             if (pkmn == null) { return 0; }
-            return pkmn.CNT_Tough;
+            return pkmn.ContestTough;
         }
 
         protected override List<string> ExtractRibbons()
