@@ -216,7 +216,22 @@ namespace PKSaveExtract.Models
             return FormatText(game);
         }
 
-        abstract protected List<string> ExtractRibbons();
+        protected List<string> ExtractRibbons()
+        {
+            List<String> savedRibbons = new List<string>();
+            if (pokemon == null) { return savedRibbons; }
+
+            List<RibbonInfo> ribbons = RibbonInfo.GetRibbonInfo(pokemon);
+            foreach (RibbonInfo ribbon in ribbons)
+            {
+                if (ribbon.HasRibbon)
+                {
+                    savedRibbons.Add(ribbon.Name.ToLower());
+                }
+            }
+
+            return savedRibbons;
+        }
 
         protected virtual string GetLocation(int locationID)
         {
