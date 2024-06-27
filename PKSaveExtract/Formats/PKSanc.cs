@@ -57,7 +57,7 @@ namespace PKSaveExtract.Formats
         public string Met_game { get; set; }
         public int Met_level { get; set; }
 
-        public string Tera_type { get; set; }
+        public string? Tera_type { get; set; }
         public bool Is_alpha { get; set; }
         public bool Has_n_sparkle { get; set; }
         public bool Can_gigantamax { get; set; }

@@ -65,7 +65,7 @@ namespace PKSaveExtract.Models
         public int met_level;
         public Trainer trainer;
 
-        public string tera_type;
+        public string? tera_type = null;
         public bool is_alpha = false;
         public bool has_n_sparkle = false;
         public bool can_gigantamiax = false;
@@ -77,11 +77,9 @@ namespace PKSaveExtract.Models
         {
             this.pokemon = pokemon;
 
-            Debug.WriteLine(pokemon.PID.ToString());
             PID = pokemon.PID;
             nickname = pokemon.Nickname;
             is_shiny = pokemon.IsShiny;
-            tera_type = GetType(pokemon.PersonalInfo.Type1);
             Init();
 
             form = pokemon.Form;
