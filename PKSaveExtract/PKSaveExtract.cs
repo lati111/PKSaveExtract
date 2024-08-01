@@ -60,15 +60,13 @@ namespace PKSaveExtract
             List<AbstractPokemon> pokemonCollection = new();
             pkmnCollection.ForEach(pkmn =>
             {
-
-
                 AbstractPokemon? pokemon = ConvertPokemon(pkmn);
                 if (pokemon == null)
                 {
                     return;
                 }
 
-                if (pkmn.PID != 0 && pkmn.Species.ToString() != "none" && pkmn.MetDate != null)
+                if (pkmn.PID != 0 && pkmn.Species.ToString() != "none")
                 {
                     pokemonCollection.Add(pokemon);
                 }
